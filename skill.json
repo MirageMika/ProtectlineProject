@@ -1,0 +1,86 @@
+{
+  "manifest": {
+    "publishingInformation": {
+      "locales": {
+        "fr-FR": {
+          "summary": "VAAS Voice Authentication Alarm System",
+          "examplePhrases": [
+            "Alexa ouvre maison protégée",
+            "1 2 3 4",
+            "Paris"
+          ],
+          "keywords": [
+            "Alarm",
+            "Voice",
+            "Control",
+            "Alarme",
+            "Désactivation",
+            "Activation",
+            "enclenchement",
+            "enclencher",
+            "système",
+            "system"
+          ],
+          "name": "Maison protégée",
+          "description": "Skills that allows us to authenticate the user and disable the alarm",
+          "smallIconUri": "file://assets/images/fr-FR_smallIconUri.png",
+          "largeIconUri": "file://assets/images/fr-FR_largeIconUri.png"
+        }
+      },
+      "automaticDistribution": {
+        "isActive": false
+      },
+      "isAvailableWorldwide": true,
+      "testingInstructions": "Sample Testing Instructions.",
+      "category": "SMART_HOME",
+      "distributionMode": "PUBLIC",
+      "distributionCountries": []
+    },
+    "apis": {
+      "custom": {
+        "endpoint": {
+          "uri": "arn:aws:lambda:eu-west-1:715229004653:function:1bc6ec88-5a17-433c-925a-4c0f9d7017fc:Release_0"
+        },
+        "interfaces": [],
+        "regions": {
+          "EU": {
+            "endpoint": {
+              "uri": "arn:aws:lambda:eu-west-1:715229004653:function:1bc6ec88-5a17-433c-925a-4c0f9d7017fc:Release_0"
+            }
+          },
+          "NA": {
+            "endpoint": {
+              "uri": "arn:aws:lambda:us-east-1:715229004653:function:1bc6ec88-5a17-433c-925a-4c0f9d7017fc:Release_0"
+            }
+          },
+          "FE": {
+            "endpoint": {
+              "uri": "arn:aws:lambda:us-west-2:715229004653:function:1bc6ec88-5a17-433c-925a-4c0f9d7017fc:Release_0"
+            }
+          }
+        }
+      }
+    },
+    "manifestVersion": "1.0",
+    "permissions": [
+      {
+        "name": "alexa::profile:name:read"
+      },
+      {
+        "name": "alexa::person_id:read"
+      }
+    ],
+    "privacyAndCompliance": {
+      "allowsPurchases": false,
+      "locales": {
+        "fr-FR": {
+          "privacyPolicyUrl": "https://perso.esiee.fr/~chansavm/?fbclid\u003dIwAR1kNcUeyxCulck7D5tWpV6PXgBUzmRFWPDGqgRu3XEx0yUybv3xbICO6Po"
+        }
+      },
+      "containsAds": false,
+      "isExportCompliant": true,
+      "isChildDirected": false,
+      "usesPersonalInfo": true
+    }
+  }
+}

@@ -1,0 +1,102 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "invocationName": "mon système d\u0027alarme",
+      "intents": [
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.NavigateHomeIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.FallbackIntent",
+          "samples": []
+        },
+        {
+          "name": "Passcode",
+          "slots": [
+            {
+              "name": "digits",
+              "type": "AMAZON.FOUR_DIGIT_NUMBER"
+            }
+          ],
+          "samples": [
+            "{digits}",
+            "désactive l\u0027alarme {digits}",
+            "éteint l\u0027alarme {digits}"
+          ]
+        },
+        {
+          "name": "Answer",
+          "slots": [
+            {
+              "name": "number",
+              "type": "AMAZON.NUMBER"
+            },
+            {
+              "name": "date",
+              "type": "AMAZON.DATE"
+            },
+            {
+              "name": "animal",
+              "type": "AMAZON.Animal"
+            },
+            {
+              "name": "firstName",
+              "type": "AMAZON.FirstName"
+            },
+            {
+              "name": "country",
+              "type": "AMAZON.Country"
+            }
+          ],
+          "samples": [
+            "{country}",
+            "{firstName}",
+            "{animal} ",
+            "{date}",
+            "{number}"
+          ]
+        },
+        {
+          "name": "ArmSystem",
+          "slots": [],
+          "samples": [
+            "lance l\u0027alarme",
+            "initie l\u0027alarme",
+            "met en place l\u0027alarme",
+            "arme l\u0027alarme",
+            "allume l\u0027alarme",
+            "active l\u0027alarme"
+          ]
+        },
+        {
+          "name": "TrustedUser",
+          "slots": [],
+          "samples": [
+            "je suis là",
+            "désactive le système d\u0027alarme",
+            "éteint le système d\u0027alarme",
+            "désactive l\u0027alarme",
+            "éteint l\u0027alarme",
+            "C\u0027est moi",
+            "Je suis rentré"
+          ]
+        }
+      ],
+      "types": []
+    }
+  },
+  "version": "35"
+}
